@@ -359,6 +359,73 @@ body {
 }
  
 
+/* Animations */
+
+/*
+.fadeUp {
+    -webkit-animation: fadeUp 1.2s both;
+    -moz-animation: fadeUp 1.2s both;
+    -o-animation: fadeUp 1.2s both;
+    animation: fadeUp 1.2s both;
+}
+
+@-webkit-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-o-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -o-transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
+*/
+
+.fade-scale-in {
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+ 
+ .fade-scale-in.transition {
+     transition: all 0.4s ease-in-out;
+     opacity: 1;
+}
+
+
+
 
 /* ---- COACHING ---- */
 

@@ -121,6 +121,61 @@
     }
   }
 
+
+
+
+/* Animations */
+/*
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      document.querySelectorAll(".fade")[0].classList.add("fadeUp");
+      document.querySelectorAll(".fade")[1].classList.add("fadeUp");
+      document.querySelectorAll(".fade")[2].classList.add("fadeUp");
+    } else { 
+      document.querySelectorAll(".fade")[0].classList.remove("fadeUp");
+      document.querySelectorAll(".fade")[1].classList.remove("fadeUp");
+      document.querySelectorAll(".fade")[2].classList.remove("fadeUp");
+    }
+  })
+})
+
+observer.observe(document.querySelector(".fade-cont"));
+*/
+
+function handler(entries) {
+  for (const entry of entries) {
+      console.log(entries);
+
+      if (entry.isIntersecting) {
+          entry.target.classList.add("transition");
+      } else {
+          entry.target.classList.remove("transition");
+      }
+  }
+}
+
+const observer = new IntersectionObserver(handler, {
+  threshold: 0.3,
+});
+
+
+const cardA = document.getElementById("card-a");
+cardA.classList.add("fade-scale-in"); 
+observer.observe(cardA);
+
+const cardB = document.getElementById("card-b");
+cardB.classList.add("fade-scale-in"); 
+observer.observe(cardB);
+
+const cardC = document.getElementById("card-c");
+cardC.classList.add("fade-scale-in"); 
+observer.observe(cardC);
+
+
+
+/* ---- HOMEPAGE ---- */
+
 /* Testemonials slideshow */
   var slideIndex = 1;
   showSlides(slideIndex);
@@ -154,29 +209,29 @@ function showSlides(n) {
 /*---- ABOUT ----*/
 
 /* Timeline */
-function handler(entries) {
-  for (const entry of entries) {
-    console.log(entry);
-    if (entry.isIntersecting) {
-      entry.target.classList.add("transition");
-    } else {
-      entry.target.classList.remove("transition");        
-    }
-  }
-}
+// function handler(entries) {
+//   for (const entry of entries) {
+//     console.log(entry);
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("transition");
+//     } else {
+//       entry.target.classList.remove("transition");        
+//     }
+//   }
+// }
 
-const observer = new
-IntersectionObserver(handler, {
-  threshold: 0.3,
-});
+// const observer = new
+// IntersectionObserver(handler, {
+//   threshold: 0.3,
+// });
 
-const timelineElements =
-document.querySelectorAll(".timeline li");
+// const timelineElements =
+// document.querySelectorAll(".timeline li");
 
 
-for (const element of timelineElements) {
-  element.classList.add("fade-scale-in");
-  observer.observe(element);
-}
+// for (const element of timelineElements) {
+//   element.classList.add("fade-scale-in");
+//   observer.observe(element);
+// }
 
 
