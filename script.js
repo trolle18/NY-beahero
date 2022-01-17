@@ -172,6 +172,10 @@ const cardC = document.getElementById("card-c");
 cardC.classList.add("fade-scale-in"); 
 observer.observe(cardC);
 
+const cardD = document.getElementById("card-d");
+cardD.classList.add("fade-scale-in"); 
+observer.observe(cardD);
+
 
 
 /* ---- HOMEPAGE ---- */
