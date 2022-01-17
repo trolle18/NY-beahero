@@ -866,7 +866,7 @@ button[type=submit]:hover {
 }
 
 .footer-links {
-    width: 200px;  
+    width: 180px;  
     border: solid violet 0px;
     color: #f8f8f8;
     font-size: 14px;
@@ -895,6 +895,15 @@ button[type=submit]:hover {
 
 .footer-links a:hover {
     color: #c8c7ff;
+}
+
+.footer-nav {
+    padding-left: 100px;
+    /* padding-top: 20px; */
+}
+
+.ownr {
+    margin-top: -25px;
 }
 
 .some-container {
