@@ -125,23 +125,6 @@
 
 
 /* Animations */
-/*
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      document.querySelectorAll(".fade")[0].classList.add("fadeUp");
-      document.querySelectorAll(".fade")[1].classList.add("fadeUp");
-      document.querySelectorAll(".fade")[2].classList.add("fadeUp");
-    } else { 
-      document.querySelectorAll(".fade")[0].classList.remove("fadeUp");
-      document.querySelectorAll(".fade")[1].classList.remove("fadeUp");
-      document.querySelectorAll(".fade")[2].classList.remove("fadeUp");
-    }
-  })
-})
-
-observer.observe(document.querySelector(".fade-cont"));
-*/
 
 function handler(entries) {
   for (const entry of entries) {
