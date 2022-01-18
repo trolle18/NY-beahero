@@ -94,65 +94,6 @@ body {
     color: #c8c7ff;
 }
 
-/* Language switch */
-.language  {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    margin-left: 20px;
-    margin-top: 100px;
-    display: inline-block;
-    color: #f8f8f8;
-    position: relative;
-}
-
-.langbtn {
-    background-color: #2f1f5d;
-    border: none;
-    color: #f8f8f8;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding: 4px;
-}
-
-.langbtn img {
-    filter: invert(100%) sepia(72%) saturate(98%) hue-rotate(186deg) brightness(109%) contrast(95%);
-}
-
-.lang {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 0px;
-    margin: 2px 5px;
-}
-
-
-.language-content {
-    display: none;
-    background-color: #2f1f5d;
-    position: absolute;
-    width: 100%;
-    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-}
-
-.language a {
-    text-decoration: none;
-    color: #f8f8f8;
-    margin: 10px 5px ;
-    padding: 5px;
-    display: block;
-}
-
-
-.show-lang {
-  display: block;
-}
-
 
 /* Header */
 
@@ -358,6 +299,20 @@ body {
     background-color: #2f1f5d;
 }
  
+
+/* Animations */
+
+.fade-scale-in {
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+ 
+ .fade-scale-in.transition {
+     transition: all 0.4s ease-in-out;
+     opacity: 1;
+}
+
+
 
 
 /* ---- COACHING ---- */
@@ -943,6 +898,72 @@ button[type=submit]:hover {
 .some-icon:hover {
     filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
     
+}
+
+.footer-end {
+    display: block;
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.cvr  {
+    color: #f8f8f8;
+    float: left;
+}
+
+/* Language switch */
+.language  {
+    color: #f8f8f8;
+    float: right;
+    position: relative;
+}
+
+.langbtn {
+    background-color: #2f1f5d;
+    border: none;
+    color: #f8f8f8;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 4px;
+}
+
+.langbtn img {
+    filter: invert(100%) sepia(72%) saturate(98%) hue-rotate(186deg) brightness(109%) contrast(95%);
+}
+
+.lang {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px;
+    margin: 2px 5px;
+}
+
+
+.language-content {
+    display: none;
+    background-color: #2f1f5d;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.language a {
+    text-decoration: none;
+    color: #f8f8f8;
+    margin: 10px 5px ;
+    padding: 5px;
+    display: block;
+}
+
+
+.show-lang {
+  display: block;
 }
 
 
