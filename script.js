@@ -37,7 +37,7 @@
     /* Language translation */
         var language = {
             eng: {
-                welcome: "Welcome!",
+                welcome: "",
                 lang: "Language",
 
                 coaching: "Coaching",
@@ -50,7 +50,7 @@
 
 
             da: {
-                welcome: "Velkommen!",
+                welcome: "",
                 lang: "Sprog",
 
                 coaching: "Coaching",
