@@ -50,9 +50,10 @@ body {
 
 .logo a {
     border: solid green 0px;
-    font-family: 'NewsGoth BT', sans-serif;
+    font-family: pinot-grigio-modern, 'NewsGoth BT', sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: 20px;
-    font-weight: bold;
     color: #f8f8f8;
     text-transform: uppercase;
     text-decoration: none;
@@ -107,10 +108,12 @@ body {
 }
 
 .header-text h1 {
-    font-family: 'NewsGoth BT', sans-serif;
-    font-weight: bold;
+    font-family: pinot-grigio-modern, sans-serif;
+    font-weight: 500;
+    font-style: normal;    
     text-transform: uppercase;
-    font-size: 36px;
+    word-spacing: 25px;
+    font-size: 52px;
 }
 
 .header-text h2 {
@@ -302,12 +305,12 @@ body {
 
 /* Animations */
 
-.fade-scale-in {
+.fade-in {
     transition: all 0.4s ease-in-out;
     opacity: 0;
 }
  
- .fade-scale-in.transition {
+ .fade-in.transition {
      transition: all 0.4s ease-in-out;
      opacity: 1;
 }
@@ -676,18 +679,6 @@ body {
     margin-bottom: 100px;
 }
 
-.fade-scale-in {
-    transform: translateY(20px);
-    opacity: 0;
-}
-
-.fade-scale-in.transition {
-    transition: all 0.6s ease-in-out;
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
 
 /* ---- CONTACT ---- */
 .contact {
@@ -800,10 +791,11 @@ button[type=submit]:hover {
 }
 
 .footer-logo {
-    font-family: 'NewsGoth BT', sans-serif;
-    font-weight: bold;
+    font-family: pinot-grigio-modern, 'NewsGoth BT', sans-serif;
+    font-weight: 300;
+    font-style: normal;
     text-transform: uppercase;
-    font-size: 18px; 
+    font-size: 24px; 
     border: solid blue 0px;
     display: block;
     width: 100%;
@@ -909,6 +901,7 @@ button[type=submit]:hover {
 .cvr  {
     color: #f8f8f8;
     float: left;
+    padding-top: 8px;
 }
 
 /* Language switch */
@@ -916,6 +909,7 @@ button[type=submit]:hover {
     color: #f8f8f8;
     float: right;
     position: relative;
+    align-items: center;
 }
 
 .langbtn {
@@ -1140,6 +1134,10 @@ button[type=submit]:hover {
         background-color: #2f1f5d;
         padding: 50px 0px;
     }
+    
+    .footer-content {
+        margin: 0px 50px;
+    }
 
 
     .footer-logo {
@@ -1160,10 +1158,26 @@ button[type=submit]:hover {
 
     .some-container {
         display: block;
-        margin-left: auto;
+        margin-left: -20%;
         margin-right: auto;
         margin-top: 20px;
         width: 50%;
+    }
+
+    .footer-nav {
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .footer-end {
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cvr {
+        text-align: center;
+        margin-top: 50px;
     }
 
 }
