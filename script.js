@@ -19,7 +19,7 @@
     
     /* Define language reload anchors */
         var dataReload = document.querySelectorAll("[data-reload]");
-        var hi = document.querySelector("#hi");
+        var hi = document.querySelector("#langswitch");
         var lang = document.querySelector("#lang");
 
 
@@ -37,7 +37,7 @@
     /* Language translation */
         var language = {
             eng: {
-                welcome: "Welcome!",
+                welcome: "",
                 lang: "Language",
 
                 coaching: "Coaching",
@@ -50,7 +50,7 @@
 
 
             da: {
-                welcome: "Velkommen!",
+                welcome: "",
                 lang: "Sprog",
 
                 coaching: "Coaching",
