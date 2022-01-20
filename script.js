@@ -37,7 +37,7 @@
     /* Language translation */
         var language = {
             eng: {
-                welcome: "Welcome!",
+                welcome: "",
                 lang: "Language",
 
                 coaching: "Coaching",
@@ -50,7 +50,7 @@
 
 
             da: {
-                welcome: "Velkommen!",
+                welcome: "",
                 lang: "Sprog",
 
                 coaching: "Coaching",
@@ -144,19 +144,19 @@ const observer = new IntersectionObserver(handler, {
 
 
 const cardA = document.getElementById("card-a");
-cardA.classList.add("fade-scale-in"); 
+cardA.classList.add("fade-in"); 
 observer.observe(cardA);
 
 const cardB = document.getElementById("card-b");
-cardB.classList.add("fade-scale-in"); 
+cardB.classList.add("fade-in"); 
 observer.observe(cardB);
 
 const cardC = document.getElementById("card-c");
-cardC.classList.add("fade-scale-in"); 
+cardC.classList.add("fade-in"); 
 observer.observe(cardC);
 
 const cardD = document.getElementById("card-d");
-cardD.classList.add("fade-scale-in"); 
+cardD.classList.add("fade-in"); 
 observer.observe(cardD);
 
 

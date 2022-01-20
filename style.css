@@ -50,9 +50,10 @@ body {
 
 .logo a {
     border: solid green 0px;
-    font-family: 'NewsGoth BT', sans-serif;
+    font-family: pinot-grigio-modern, 'NewsGoth BT', sans-serif;
+    font-weight: 300;
+    font-style: normal;
     font-size: 20px;
-    font-weight: bold;
     color: #f8f8f8;
     text-transform: uppercase;
     text-decoration: none;
@@ -107,10 +108,12 @@ body {
 }
 
 .header-text h1 {
-    font-family: 'NewsGoth BT', sans-serif;
-    font-weight: bold;
+    font-family: pinot-grigio-modern, sans-serif;
+    font-weight: 500;
+    font-style: normal;    
     text-transform: uppercase;
-    font-size: 36px;
+    word-spacing: 25px;
+    font-size: 52px;
 }
 
 .header-text h2 {
@@ -119,7 +122,14 @@ body {
     font-weight: normal;
 }
 
+.header-logo {
+    justify-content: center;
+}
 
+.header-logo img {
+    max-width: 350px;
+    margin-top: 0px;
+}
 
 /* ---- HOMEPAGE ---- */
 
@@ -302,12 +312,12 @@ body {
 
 /* Animations */
 
-.fade-scale-in {
+.fade-in {
     transition: all 0.4s ease-in-out;
     opacity: 0;
 }
  
- .fade-scale-in.transition {
+ .fade-in.transition {
      transition: all 0.4s ease-in-out;
      opacity: 1;
 }
@@ -553,7 +563,7 @@ body {
 
 
 /* ---- ABOUT ---- */
-.lillabox{
+.lillabox {
     position: relative;
     background: #c8c7ff;
     max-width: 650px;
@@ -561,6 +571,11 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+/* .flexbox img {
+    height: auto;
+    max-width: 500px;
+} */
 
 .about-tekst h3 {
     font-family: "NewsGoth BT", sans-serif;
@@ -676,18 +691,6 @@ body {
     margin-bottom: 100px;
 }
 
-.fade-scale-in {
-    transform: translateY(20px);
-    opacity: 0;
-}
-
-.fade-scale-in.transition {
-    transition: all 0.6s ease-in-out;
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
 
 /* ---- CONTACT ---- */
 .contact {
@@ -800,10 +803,10 @@ button[type=submit]:hover {
 }
 
 .footer-logo {
-    font-family: 'NewsGoth BT', sans-serif;
-    font-weight: bold;
+    font-family: pinot-grigio-modern, 'NewsGoth BT', sans-serif;
+    font-style: normal;
     text-transform: uppercase;
-    font-size: 18px; 
+    font-size: 24px; 
     border: solid blue 0px;
     display: block;
     width: 100%;
@@ -814,6 +817,8 @@ button[type=submit]:hover {
     color: #f8f8f8;
     text-decoration: none;
     transition: 0.2s ease-in-out;
+    font-weight: 300;
+
 }
 
 .footer-logo a:hover {
@@ -909,6 +914,7 @@ button[type=submit]:hover {
 .cvr  {
     color: #f8f8f8;
     float: left;
+    padding-top: 8px;
 }
 
 /* Language switch */
@@ -916,6 +922,7 @@ button[type=submit]:hover {
     color: #f8f8f8;
     float: right;
     position: relative;
+    align-items: center;
 }
 
 .langbtn {
@@ -1042,29 +1049,39 @@ button[type=submit]:hover {
 
         .benthe-img {
             float: none;
-            width: 100%;
+            width: 250px;
+            height: 100%;
+            contain: content;
+            overflow: hidden;
+            margin-left: 20px;
         }
 
         .handshake {
             float: none;
-            margin-left: 0px;
-            padding: 0px;
-            width: 100%;
+            width: 250px;
+            height: 100%;
+            contain: content;
+            overflow: hidden;
+            margin-left: 20px;
         }
 
         .flowers {
             float: none;
-            width: 100%;
+            width: 250px;
+            max-height: 100%;
+            contain: content;
+            overflow: hidden;
+            margin-left: 20px;
         }
 
         .benthe-athens {
-            width: 100%;
+            max-width: 100%;
             margin: 10px 0px;
             justify-content: center;
         }
         
         .benthe-athens img {
-            width: 210px;
+            width: 325px;
             margin-right: auto;
             margin-left: auto;
         }
@@ -1140,6 +1157,10 @@ button[type=submit]:hover {
         background-color: #2f1f5d;
         padding: 50px 0px;
     }
+    
+    .footer-content {
+        margin: 0px 50px;
+    }
 
 
     .footer-logo {
@@ -1160,10 +1181,26 @@ button[type=submit]:hover {
 
     .some-container {
         display: block;
-        margin-left: auto;
+        margin-left: -20%;
         margin-right: auto;
         margin-top: 20px;
         width: 50%;
+    }
+
+    .footer-nav {
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .footer-end {
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cvr {
+        text-align: center;
+        margin-top: 50px;
     }
 
 }
@@ -1336,7 +1373,7 @@ button[type=submit]:hover {
     }
 
     .flexbox img {
-        max-width: 200px;
+        max-width: 250px;
         margin-right: 10px;          
     }
 
