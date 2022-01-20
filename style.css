@@ -127,9 +127,11 @@ body {
 }
 
 .header-logo img {
-    width: 400px;
-    height: auto;
+    max-height: 200px;
+    width: auto;
     margin-top: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 /* ---- HOMEPAGE ---- */
