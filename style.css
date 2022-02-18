@@ -11,7 +11,7 @@ body {
 .header-box {
     background-image: url(img/headerfoto.png);
     height: 500px;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -19,7 +19,7 @@ body {
 }
 
 .header-box.slim-box {
-    height: 60px;
+    height: 80px;
 }
 
 .nav {
@@ -27,7 +27,7 @@ body {
     margin: 0 auto;
     max-width: 900px;
     position: relative;
-    height: 60px;
+    height: 80px;
 }
 
 .nav ul {
@@ -39,6 +39,23 @@ body {
 .nav li {
     display: inline;
 }
+
+.head-logo-cntr {
+    position: absolute;
+    border: solid red 0px;
+    top: 0%;
+    left: 0%;
+    padding: 10px 15px;
+}
+
+.head-logo {
+    height: 55px;
+    transition: 0.3s ease-in-out;
+}
+
+/* .head-logo:hover {
+    filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
+} */
 
 .logo {
     border: solid yellow 0px;
@@ -71,7 +88,7 @@ body {
     position: absolute;
     top: 0%;
     right: 0%;
-    padding: 20px 0px;    
+    padding: 28px 0px;    
 }
 
 .nav-links a {
@@ -102,18 +119,19 @@ body {
     position: absolute;
     text-align: center;
     color: #f8f8f8;
-    top: 202px;
+    top: 210px;
     width: 100%;
     border: solid green 0px;
 }
 
 .header-text h1 {
-    font-family: pinot-grigio-modern, sans-serif;
-    font-weight: 500;
+    font-family: 'Pinot Grigio Modern', sans-serif;
+    font-weight: 200;
     font-style: normal;    
     text-transform: uppercase;
-    word-spacing: 25px;
-    font-size: 52px;
+    word-spacing: 12px;
+    font-size: 24px;
+    border: solid red 0px;
 }
 
 .header-text h2 {
@@ -126,12 +144,10 @@ body {
     justify-content: center;
 }
 
-.header-logo-img {
-    max-height: 200px;
+.header-text-logo {
+    height: 20px;
     width: auto;
     margin-top: 0px;
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 /* ---- HOMEPAGE ---- */
@@ -149,12 +165,31 @@ body {
     margin: 20px 0px;
 }
 
+.inner-section {
+    max-width: 450px;
+    float: left;
+}
+
+.fp-img {
+    background-image: url(img/benthe.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 190px;
+    border: solid #c8c7ff 0px;
+    box-shadow: 2px 2px 4px 1px #2f1f5d40;
+    float: right;
+    margin-top: 50px;
+    right: 0px;
+}
+
 .section-text {
     padding: 0px;
     margin: 0px;
     width: 650px;  
     border: solid violet 0px;
 }
+
 
 .section-text h3 {
     font-family: 'NewsGoth BT', sans-serif;
@@ -173,6 +208,9 @@ body {
     border: solid green 0px;
 }
 
+
+
+/*-- Card section --*/
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -187,6 +225,7 @@ body {
     padding: 5px;
     width: 195px;  
     border: solid violet 0px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
 
 .card h3 {
@@ -227,6 +266,7 @@ body {
     max-width: 650px;
     margin: 0 auto;
     margin-bottom: 100px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
 
 .testimonials h3 {
@@ -235,7 +275,9 @@ body {
     text-transform: uppercase;
     font-size: 18px; 
     margin-top: 10px;
-    padding: 20px 10px;
+    margin-bottom: 0px;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
 }
 
 .slides-container {
@@ -245,7 +287,7 @@ body {
 
 .slide {
     display: none;
-    padding: 40px;
+    padding: 20px 40px 40px 40px;
     text-align: center;
 }
 
@@ -357,6 +399,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #c8c7ff;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
   }
 
   .benthe-img {
@@ -364,28 +407,60 @@ body {
     float: left;
   }
 
-  .offers {
-    padding: 20px 0px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #c8c7ff;
-  }
+  .coaching1-img {
+    background-image: url(img/sprout.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 260px;
+    width: 200px;
+    border: solid red 0px;
+    float: left;
+    right: 0px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
+    margin: 10px;
 
-  .offers h3 {
+}
+
+.offers {
+    margin-left: 200px;
+ 
+}
+
+.offers h3 {
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
     text-align: center;
-  }
+    margin: 10px;
+}
 
-  .offers li p {
-    margin-left: 0px;
-    display: block;
-  }
-  
-  .section2 {
+.offers li {
+    list-style-type: none;
+    position: relative;
+    left: 0px;
+    margin: 0px;
+}
+
+.offers li p {
+    margin: 0px 0px;
+}
+
+.offers li::before {
+    position: absolute;
+    content: '';
+    height: 1em;
+    width: 1em;
+    background-image: url(img/dpcape.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    left: -18px;
+    top: 4px;
+
+}
+
+
+.section2 {
     max-width: 650px;
     padding: 15px;
     margin: 0px;
@@ -393,66 +468,95 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #c8c7ff;
-  }
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
+}
   
-  .handshake {
+  /* .handshake {
     margin-left: 15px;
     height: 250px;
     float: right;
-  }
+  } */
   
-  .text2 p {
-    margin-right: 0px;
+.coaching2-img {
+    background-image: url(img/bws.png);
+    background-size: cover;
+    background-position: left;
+    height: 260px;
+    width: 200px;
+    border: solid red 0px;
+    float: right;
+    margin: 10px;
+    right: 0px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
+}
+
+.text2 p {
+    margin: 10px;
     display: block;
-    margin-top: 15px;
-  }
+}
   
-  .section3 {
+.coaching-section {
     max-width: 650px;
-    padding: 15px;
+    padding: 0px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     background-color: #c8c7ff;
-  }
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
+}
   
-  .flowers {
+  /* .flowers {
     margin-right: 15px;
     height: 250px;
     float: left;
-  }
+  } */
+
+.coaching3-img {
+    background-image: url(img/cnl.jpg);
+    background-size: cover;
+    background-position: left;
+    height: 260px;
+    width: 200px;
+    border: solid red 0px;
+    float: left;
+    margin: 10px;
+    right: 0px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
+    padding: 15px;
+}
   
-  .offers p {
+  /* .offers p {
     margin-left: 500px;
     display: block;
-  }
+    padding: 15px;
+  } */
   
   /*  billede i midten  */
   
-  .benthe-athens {
-      margin: 40px 0px;
-  }
+.benthe-athens {
+    margin: 40px 0px;
+}
 
-  .benthe-athens img {
+.benthe-athens img {
     display: block;
     margin-right: auto;
     margin-left: auto;
     max-width: 650px;
-  }
+}
   
-  .athens-text {
+.athens-text {
     text-align: center;
     font-style: italic;
     color: #887ee3;
     font-size: 8px;
-  }
+}
   
   /*   kort  */
   
-  .coaching-column {
+.coaching-column {
     padding: 10px 5px;
     border: solid hotpink 0px;
-  }
+}
   
   /* {
     max-width: 767px;
@@ -469,37 +573,37 @@ body {
     justify-content: center;
     border: solid red 0px;
   }*/
-  .coaching-row {
+.coaching-row {
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid green 0px;
-    
-  }
+    border: solid green 0px;    
+}
+
   .card-text {
     justify-content: center;
     margin: 0px;
     border: solid indigo 0px;
-  }
+}
   
-  .card-text2 {
+.card-text2 {
     justify-content: center;
     margin: 5px;
     margin-bottom: 15px;
     border: solid indigo 0px;
-  }
+}
   
-  .coaching-card {
+.coaching-card {
     background-color: #c8c7ff;
     padding: 20px 15px;
     margin: 5px;
     max-width: 200px;
     justify-content: center;
     border: solid violet 0px;
-  }
+}
   
-  .card-img {
+.card-img {
     /*max-width: 100px;
     margin: 50px 0px;
     display: flex;
@@ -510,9 +614,9 @@ body {
     margin-right: auto;
     filter: invert(49%) sepia(88%) saturate(380%) hue-rotate(206deg)
       brightness(93%) contrast(91%);
-  }
+}
   
-  .coaching-card h4 {
+.coaching-card h4 {
     font-family: "NewsGoth BT", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -520,7 +624,7 @@ body {
     margin-bottom: 15px;
     text-align: center;
     border: solid orange 0px;
-  }
+}
   
 
 
@@ -533,6 +637,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #c8c7ff;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
 
 .img-cntr {
@@ -544,6 +649,7 @@ body {
     background-position: center;
     float: left;
     margin: 10px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
 
 .about-text {
@@ -863,7 +969,7 @@ button[type=submit]:hover {
 
 .footer-links li {
     margin: 14px 0px;
-    text-align: left;
+    text-align: right;
     text-transform: uppercase;
 }
 
@@ -879,50 +985,7 @@ button[type=submit]:hover {
 
 .footer-nav {
     padding-left: 100px;
-    /* padding-top: 20px; */
-}
 
-.ownr {
-    margin-top: -25px;
-}
-
-.some-container {
-    padding-left: 50%;
-    padding-top: 15%;
-}
-
-.some-shape {
-    border: solid yellow 0px;
-    width: 100px;
-    position: relative;
-    bottom: 0px;
-    right: 0px;
-}
-
-.shape {
-    width: 100px;
-    height: auto;
-    position: relative;
-    bottom: 0px;
-    right: 0px;
-    display: block;
-}
-
-
-.some-icon {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    bottom: 30px;
-    left: 5px;
-    cursor: pointer;
-    filter: invert(100%) sepia(0%) saturate(62%) hue-rotate(144deg) brightness(111%) contrast(95%);
-    transition: 0.3s ease-in-out;
-}
-
-.some-icon:hover {
-    filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
-    
 }
 
 .footer-end {
@@ -931,11 +994,33 @@ button[type=submit]:hover {
     width: 100%;
 }
 
+.ownr {
+    margin-top: -25px;
+    color: #c8c7ff;
+}
+
+.some-icon {
+    width: 40px;
+    margin-top: 20px;
+    float: right;
+    height: auto;
+    left: 5px;
+    cursor: pointer;
+    filter: invert(100%) sepia(0%) saturate(62%) hue-rotate(144deg) brightness(111%) contrast(95%);
+    transition: 0.3s ease-in-out;
+}
+
+.some-icon:hover {
+    filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
+}
+
 .cvr  {
-    color: #f8f8f8;
+    color: #c8c7ff;
     float: left;
     padding-top: 8px;
+    font-size: 12px;
 }
+
 
 /* Language switch */
 .language  {
