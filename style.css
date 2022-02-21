@@ -37,9 +37,6 @@ body {
     display: inline;
 }
 
-/* .nav li {
-    display: inline;
-} */
 
 .head-logo-cntr {
     position: absolute;
@@ -53,10 +50,6 @@ body {
     height: 55px;
     transition: 0.3s ease-in-out;
 }
-
-/* .head-logo:hover {
-    filter: invert(76%) sepia(8%) saturate(1549%) hue-rotate(202deg) brightness(102%) contrast(103%);
-} */
 
 .logo {
     border: solid yellow 0px;
@@ -171,8 +164,9 @@ body {
     float: left;
 }
 
+
 .fp-img {
-    background-image: url(img/benthe.png);
+    background-image: url(img/benthe-ccv2.png);
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -204,9 +198,46 @@ body {
     text-decoration: none;
     color: #2f1f5d;
     font-style: italic;
-    font-size: 12px;
-    margin: 20px;
+    font-size: 14px;
     border: solid green 0px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.ifclogo {
+    background-image: url(img/ICF_PC_icon_FullColor.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18px;
+    width: 40px;
+    float: left;
+}
+
+.link-icon {
+    background-image: url(img/open_in_new_black_18dp.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18px;
+    width: 18px;
+    margin: 0px 5px;
+}
+
+#more {
+    display: none;
+    margin-top: 50px;
+}
+
+#moreBtn {
+    text-decoration: none;
+    color: #2f1f5d;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 10px;
+    border: solid green 0px;
+    background-color: transparent;
 }
 
 
@@ -760,7 +791,7 @@ body {
     justify-content: center;
     border: solid blue 0px;
     margin: 0 50px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .form-container {
