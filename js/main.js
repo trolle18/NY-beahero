@@ -1,3 +1,47 @@
+  // Read more btn 
+  function moreFunction() {
+    var ellipsis = document.getElementById("ellipsis");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("moreBtn");
+  
+    if (ellipsis.style.display === "none") {
+      ellipsis.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      ellipsis.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "block";
+    }
+  }
+
+
+
+/* ---------- NAV --------- */
+  /* Mobile menu */
+
+  /* When clicked, hide/show dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  /* Close  dropdown if clicked outside */
+  window.onclick = function(event) {
+    if (!event.target.matches('.fa')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+
+
+
   // ---------- LANG SWITCH ---------- //
   //     /* When clicked, hide/show dropdown content */
   // function langSwitch() {
@@ -95,46 +139,3 @@
   //               location.reload();
   //           }, 100);
   //       }
-
-  // Read more btn 
-  function moreFunction() {
-    var ellipsis = document.getElementById("ellipsis");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("moreBtn");
-  
-    if (ellipsis.style.display === "none") {
-      ellipsis.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      ellipsis.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-  }
-
-
-
-/* ---------- NAV --------- */
-  /* Mobile menu */
-
-  /* When clicked, hide/show dropdown content */
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  /* Close  dropdown if clicked outside */
-  window.onclick = function(event) {
-    if (!event.target.matches('.fa')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-

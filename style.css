@@ -185,7 +185,6 @@ body {
     border: solid violet 0px;
 }
 
-
 .section-text h3 {
     font-family: 'NewsGoth BT', sans-serif;
     font-weight: bold;
@@ -194,25 +193,30 @@ body {
     margin-bottom: -5px;
 }
 
-.section-text a {
-    text-decoration: none;
-    color: #2f1f5d;
-    font-style: italic;
-    font-size: 14px;
-    border: solid green 0px;
-    margin-top: 8px;
+.ifc {
     display: flex;
     flex-direction: row;
+    border: solid green 0px;
+    margin-bottom: 0px;
 }
 
-.ifclogo {
-    background-image: url(img/ICF_PC_icon_FullColor.png);
+.ifc-logo {
+    background-image: url(img/ICF_PC_Icon_FullColor.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 18px;
-    width: 40px;
-    float: left;
+    height: 14px;
+    width: 32px;
+    margin-right: 4px;
+}
+
+.ifc-link {
+    text-decoration: none;
+    color: #2f1f5d;
+    /* font-style: italic; */
+    font-size: 14px;
+    border: solid green 0px;
+    display: flex;
 }
 
 .link-icon {
@@ -220,14 +224,16 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 18px;
-    width: 18px;
-    margin: 0px 5px;
+    height: 14px;
+    width: 14px;
+    margin-top: 2px;
+    margin-left: 4px;
 }
+
 
 #more {
     display: none;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 
 #moreBtn {
@@ -235,9 +241,12 @@ body {
     color: #2f1f5d;
     font-style: italic;
     font-size: 14px;
-    margin-top: 10px;
+    font-weight: 600;
+    padding: 0px;
+    margin-top: 4px;
     border: solid green 0px;
     background-color: transparent;
+    display: block;
 }
 
 
