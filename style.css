@@ -264,7 +264,7 @@ body {
 .card {
     background-color: #c8c7ff;
     padding: 5px;
-    width: 195px;  
+    width: 198px;  
     border: solid violet 0px;
     box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
@@ -275,10 +275,25 @@ body {
     text-transform: uppercase;
     font-size: 18px; 
     text-align: center;
-    margin-bottom: -5px;
-
+    margin-bottom: 5px;
 }
 
+.card p {
+    margin: 0px 0px 6px 0px;
+}
+
+.cards-cape {
+    background-image: url(img/dpcape.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 14px;
+    width: 100%;
+    margin: 6px;
+}
+
+
+/*-- Illustration --*/
 .ill-container {
     margin: auto;
     text-align: center;
@@ -329,7 +344,7 @@ body {
 .slide {
     display: none;
     padding: 20px 40px 40px 40px;
-    text-align: center;
+    text-align: left;
 }
 
  .slide q {
@@ -340,6 +355,7 @@ body {
     margin-top: 25px;
     color: #2f1f5d;
     font-family: 'NewsGoth BT', sans-serif;
+    text-align: center;
 }
 
 .author {
