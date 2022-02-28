@@ -9,7 +9,7 @@ body {
 
 /* Header */
 .header-box {
-    background-image: url(img/headerfoto-min.png);
+    background-image: url(img/headerfoto.png);
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@ body {
 
 
 .fp-img {
-    background-image: url(img/benthe-ccv2-min.png);
+    background-image: url(img/benthe-ccv2.png);
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -176,6 +176,10 @@ body {
     float: right;
     margin-top: 50px;
     right: 0px;
+}
+
+.fp-img-mobile {
+    display: none;
 }
 
 .section-text {
@@ -599,6 +603,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     max-width: 650px;
+    box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
   
 .athens-text {
@@ -709,6 +714,10 @@ body {
     box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
 
+/* .img-cntr-mobile {
+    display: none;
+} */
+
 .about-text {
     border: solid orangered 0px;
     font-family: "Roboto", sans-serif;
@@ -800,6 +809,10 @@ body {
     height: 250px;
     width: 650px;
 }
+
+/* .wide-img-outercntr {
+    display: none;
+} */
 
 .space {
     margin: 50px 0px;
@@ -1137,12 +1150,12 @@ button[type=submit]:hover {
 
 
 
-/* ---- MEDIA QUERIES ---- */
+/* ----- MEDIA QUERIES ----- */
 
-/* -- PHONE -- */
+/* ----- PHONE ----- */
 @media screen and (max-width:767px) {
     
-    /* Nav */
+    /* -- NAV -- */
         .nav-links {
             display: none;
         }
@@ -1151,7 +1164,12 @@ button[type=submit]:hover {
             padding: 20px;
         }
 
-    /* Mobile menu */
+        .header-logo img {
+            max-width: 300px;
+            height: auto;
+        }
+
+    /* MOBILE MENU */
         .dropbtn {
             color: #f8f8f8;
             margin: 0px;
@@ -1200,18 +1218,158 @@ button[type=submit]:hover {
         }
 
 
-    /* Homepage*/
+    /*-- HOMEPAGE --*/
+        .content {
+            margin-left: auto;
+            margin-right: auto;
+            width: 320px;
+            display: block;
+            border: solid blue 0px;
+            align-items: center;
+        }
+        
+
+        .inner-section {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+        }
+
+        .fp-img {
+            display: none;
+        } 
+
+        .fp-img-mobile {
+            display:block;
+            background-image: url(img/benthe-ccv2.png);
+            background-size: cover;
+            background-position: center;
+            height: 120px;
+            width: 100px;
+            border: solid #c8c7ff 0px;
+            box-shadow: 2px 2px 4px 1px #2f1f5d40;
+            /*-- Right position --*/
+                float: right;
+                margin-left: 0px;
+                margin-right: 0px;
+            /*-- Center position --*/
+                /* margin-left: auto;
+                margin-right: auto; */
+
+            /*-- Left position --*/
+                /* float: left;
+                margin-right: 5px;
+                margin-left: -20px; */
+        }
+
+        /* Cards */
+        .card-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .card {
+            margin: 10px 0px;
+            width: 280px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .cards-cape {
+            height: 14px;
+            margin: 0px;
+        }
+
+        /* Illustration */
+        .ill-container {
+            width: 310px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .ill-container img {
             max-width: 100%;
             height: auto;
         }
 
-        .header-logo img {
-            max-width: 300px;
-            height: auto;
+        /* Testimonials */
+        .testimonials-cntr {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-    /* Coaching */
+        .testimonials {
+            width: 300px;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slide {
+            padding: 0px 30px;
+        }
+        /* Buttons */
+        .prev, .next {
+            top: 50%;
+            margin-top: -30px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+    /* -- COACHING -- */
+        .coaching-section {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0px;
+
+        }
+
+        .coaching1-img {
+            background-position: left;
+            background-repeat: no-repeat;
+            height: 180px;
+            width: auto;
+            float: none;
+            display: block;
+            margin: 10px;
+        }
+
+        .coaching2-img {
+            background-position: left;
+            background-position: top -40px right -0px;
+            background-repeat: no-repeat;
+            height: 180px;
+            width: auto;
+            float: none;
+            display: block;
+            margin: 10px;
+        }
+
+        .coaching3-img {
+            background-position: left;
+            background-position: bottom -90px right 0px;
+            background-repeat: no-repeat;
+            height: 180px;
+            width: auto;
+            float: none;
+            display: block;
+            margin: 10px;
+            padding: 0;
+        }
+
+        .offers {
+            margin: 0px;
+            width: 100%;
+            display: block;
+        }
 
         .benthe-img {
             float: none;
@@ -1241,141 +1399,240 @@ button[type=submit]:hover {
         }
 
         .benthe-athens {
-            max-width: 100%;
-            margin: 10px 0px;
+            width: 100%;
+            margin: 0;
+            display: block;
             justify-content: center;
         }
         
         .benthe-athens img {
-            max-width: 325px;
+            width: 300px;
             margin-right: auto;
             margin-left: auto;
         }
 
-
-    /* About */
-    .billed-container img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .flexbox {
-        position: relative;
-        background: #c8c7ff;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 0px;
-        justify-content: center;
-        display: block;
-    } 
-
-    .flexbox img {
-        width: 100%;
-        height: auto;
-        position: center;
-    }              
-
-    .about-tekst {
-        padding: 5px ;
-    }
-
-    .billed-container {
-        max-width: 100%;
-        margin: 30px 0px;
-
-    }
-
-    .billed-container a {
-        text-decoration: none;
-        color: #c8c7ff;
-        font-style: italic;
-        font-size: 8px;
-    }
-
-    .timelinecont {
-        padding-top: 20px;
-    }
+        .athens-text {
+            font-size: 12px;
+        }
 
 
-    /* Contact */
-    .shape-bg {
-        position: absolute;
-        z-index: -1;
-        padding-top: 160px;
-        margin-left: -120px;
-    }
-    
-    .shape-bg img {
-        position: absolute;
-        z-index: -1;
-        transform: rotate(230deg);
-        width: 315px;
-    }
+    /* -- ABOUT -- */
+        .billed-container img {
+            max-width: 100%;
+            height: auto;
+        }
 
-    .mail-img {
-        max-width: 200px;
-    }
+        .flexbox {
+            position: relative;
+            background: #c8c7ff;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0px;
+            justify-content: center;
+            display: block;
+        } 
 
-    /* Footer */
-    .footer-container {
-        width: 100%;
-        background-color: #2f1f5d;
-        padding: 50px 0px;
-    }
-    
-    .footer-content {
-        margin: 0px 50px;
-    }
+        .flexbox img {
+            width: 100%;
+            height: auto;
+            position: center;
+        }              
+
+        .about-tekst {
+            padding: 5px ;
+        }
+
+        .billed-container {
+            max-width: 100%;
+            margin: 30px 0px;
+
+        }
+
+        /* Lists */
+        .list {
+            line-height:normal;
+        }
+        
+        .list li {
+            left: -15px;
+        }
+
+        .list li::before {
+            padding-bottom: 0px;
+            margin: 0px;
+            left: -20px;
+            top: 2px;
+            bottom: 20px;
+        }
+
+        .section-text {
+            padding: 10px;
+            margin: 0px;
+            width: 300px;  
+            border: solid violet 0px;
+        }
+
+        .section-text .list {
+            line-height: normal;
+        }
+
+        .section-text .list li {
+            left: -15px;
+            border-bottom: solid #f8f8f8 10px;
+        }
+
+        .section-text .list li::before {
+            padding-bottom: 0px;
+            margin: 0px;
+            left: -20px;
+            top: 2px;
+            bottom: 20px;
+        }
+
+        /* Photo card */
+        .about-cntr {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .about-text {
+            margin: 10px 0px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        /* .img-cntr {
+            display: none;
+        } 
+        
+        .img-cntr-mobile {
+            display: initial;
+            position: relative;
+            height: 130px;
+            width: 100px;
+            float: right;
+            background-image: url('img/benthe-ccv2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom 0px right -55px ;
+            margin: 10px 10px 0px 0px;
+            box-shadow: 2px 2px 2px 1px #2f1f5d40;
+        } */
+       
+
+        .img-cntr {
+            height: 180px;
+            width: 280px;
+            background-image: url('img/benthe-ccv2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            float: none;
+            margin-top: 10px;
+            margin-bottom: -15px;
+            box-shadow: 2px 2px 2px 1px #2f1f5d40;
+        }
+
+        /* Wide Picture */
+        .wide-img-cntr {
+            height: 180px;
+            width: 310px;
+            
+        }
 
 
-    .footer-logo {
-        text-align: center;
-    }
+    /* -- CONTACT -- */
+        .shape-bg {
+            position: absolute;
+            z-index: -1;
+            padding-top: 160px;
+            margin-left: -120px;
+        }
+        
+        .shape-bg img {
+            position: absolute;
+            z-index: -1;
+            transform: rotate(230deg);
+            width: 315px;
+        }
 
-    .footer-links {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
+        .mail-img {
+            max-width: 200px;
+        }
 
-    .footer-links li {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
+    /* -- FOOTER -- */
+        .footer-container {
+            width: 100%;
+            background-color: #2f1f5d;
+            padding: 50px 0px;
+        }
+        
+        .footer-content {
+            margin: 0px 50px;
+        }
 
-    .some-container {
-        display: block;
-        margin-left: -20%;
-        margin-right: auto;
-        margin-top: 20px;
-        width: 50%;
-    }
 
-    .footer-nav {
-        padding: 0px;
-        padding-top: 20px;
-    }
+        .footer-logo {
+            text-align: center;
+        }
 
-    .footer-end {
-        margin: 0px 50px;
-        display: flex;
-        flex-direction: column;
-    }
+        .footer-links {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
 
-    .cvr {
-        text-align: center;
-        margin-top: 50px;
-    }
+        .footer-links li {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .some-container {
+            display: block;
+            margin-left: -20%;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        .footer-nav {
+            padding: 0px;
+            padding-top: 20px;
+        }
+
+        .footer-end {
+            margin: 0px 50px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cvr {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .some-icon {
+            float: none;
+            left: initial;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
 
 }
 
 
-/* -- TABLET -- */
+
+/* ----- TABLET ----- */
 @media screen and (min-width:768px) and (max-width:1023px) {
     
-    /* Nav */
+    /* -- NAV -- */
         .nav-links {
             display: none;
         }
@@ -1432,68 +1689,68 @@ button[type=submit]:hover {
         }
 
     
-    /* Homepage*/
+    /* -- HOMEPAGE -- */
         .ill-container img {
             max-width: 100%;
             height: auto;
         }
         
 
-    /* Coaching */
+    /* -- COACHING -- */
 
     
-    /* About */
-    .billed-container img {
-        max-width: 650px;
-        height: auto;
-    }
-
-
-    .lillabox {
-        padding: 5px;
-    }
-
-    .flexbox {
-        max-width: 100%;
-        padding: 5px 5px;
-        display: flex;           
-    }
-
-    .flexbox img {
-        max-width: 250px;
-        margin-right: 10px;          
-    }
-
-    .about-tekst {
-        justify-content: center;
-        margin-top: 20px;
+    /* -- ABOUT -- */
+        .billed-container img {
+            max-width: 650px;
+            height: auto;
         }
 
-    /* Contact */
-    .shape-bg {
-        position: absolute;
-        z-index: -1;
-        padding-top: 180px;
-        margin-left: -250px;
 
-    }
-    
-    .shape-bg img {
-        position: absolute;
-        z-index: -1;
-        transform: rotate(230deg);
-        width: 500px;
-    }
+        .lillabox {
+            padding: 5px;
+        }
 
-    /* Footer */
-    .footer-container {
-        width: 100%;
-        background-color: #2f1f5d;
-        padding: 50px 0px;
-    }
-    
-    .footer-content {
-        margin: 20px;
+        .flexbox {
+            max-width: 100%;
+            padding: 5px 5px;
+            display: flex;           
+        }
+
+        .flexbox img {
+            max-width: 250px;
+            margin-right: 10px;          
+        }
+
+        .about-tekst {
+            justify-content: center;
+            margin-top: 20px;
+            }
+
+    /* -- CONTACT -- */
+        .shape-bg {
+            position: absolute;
+            z-index: -1;
+            padding-top: 180px;
+            margin-left: -250px;
+
+        }
+        
+        .shape-bg img {
+            position: absolute;
+            z-index: -1;
+            transform: rotate(230deg);
+            width: 500px;
+        }
+
+    /* -- FOOTER -- */
+        .footer-container {
+            width: 100%;
+            background-color: #2f1f5d;
+            padding: 50px 0px;
+        }
+        
+        .footer-content {
+            margin: 20px;
     }
 }
 
@@ -1501,12 +1758,12 @@ button[type=submit]:hover {
 /* -- COMPUTER -- */
 @media screen and (min-width:1024px) {
     
-    /* Nav */
+    /* -- NAV -- */
         .dropdown {
             display: none;
         }
 
-    /* Homepage*/
+    /* -- HOMEPAGE -- */
         .ill-container img {
             display: block;
             width: 90%;
@@ -1515,52 +1772,51 @@ button[type=submit]:hover {
         }
 
 
-    /* Coaching */
+    /* -- COACHING -- */
 
     
-    /* About */
-
-    .billed-container img {
-        display: block;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .lillabox {
-        max-width: 650px;
-        display: block;
-    }
-
-    .flexbox {
-        max-width: 100%;
-        padding: 5px 5px;
-        display: flex;           
-    }
-
-    .flexbox img {
-        max-width: 250px;
-        margin-right: 10px;          
-    }
-
-    .about-tekst {
-        justify-content: center;
-        margin-top: 20px;
+    /* -- ABOUT -- */
+        .billed-container img {
+            display: block;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
-    
-    /* Contact */
-    .shape-bg {
-        position: absolute;
-        z-index: -1;
-        padding-top: 180px;
-        padding-left: 80px;
-    }
-    
-    .shape-bg img {
-        position: absolute;
-        z-index: -1;
-        transform: rotate(230deg);
-        width: 500px;
-    }
+
+        .lillabox {
+            max-width: 650px;
+            display: block;
+        }
+
+        .flexbox {
+            max-width: 100%;
+            padding: 5px 5px;
+            display: flex;           
+        }
+
+        .flexbox img {
+            max-width: 250px;
+            margin-right: 10px;          
+        }
+
+        .about-tekst {
+            justify-content: center;
+            margin-top: 20px;
+            }
+        
+    /* -- CONTACT -- */
+        .shape-bg {
+            position: absolute;
+            z-index: -1;
+            padding-top: 180px;
+            padding-left: 80px;
+        }
+        
+        .shape-bg img {
+            position: absolute;
+            z-index: -1;
+            transform: rotate(230deg);
+            width: 500px;
+        }
 
 }
