@@ -588,6 +588,8 @@ body {
     padding-bottom: 5px;
     color: #2f1f5d;
     font-style: italic; 
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .pp-link {
@@ -603,7 +605,7 @@ body {
 }
 
 .pp-logo {
-    background-image: url(img/pp-logo-v2-2x1.png);
+    background-image: url(img/pp-logo-v2-2x2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
