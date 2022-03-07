@@ -616,19 +616,20 @@ body {
 
   /* Card 3 */
 .coaching3-img {
-    background-image: url(img/time-matrix.png);
-    background-size: contain;
-    background-position: center;
+    background-image: url(img/time-matrix-v.3.png);
+    background-size: cover;
+    background-position: top 0px left -62px;
     background-repeat: no-repeat;
-    height: 173px;
-    width: 194px;
+    height: 185px;
+    width: 200px;
     border: solid red 0px;
     float: left;
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     right: 0px;
     box-shadow: 2px 2px 2px 0px #2f1f5d40;
-    padding: 15px;
 }
+
+
 
 .text3 h3 {
     font-family: 'NewsGoth BT', sans-serif;
@@ -639,22 +640,31 @@ body {
 }
   
 .text3 p {
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     display: block;
 }
 
 .tm-link {
-    margin: 10px;
     display: block;
-    width: 200px;
+    width: 220px;
+    left: 0px;
+}
+
+.tm-link p {
     font-size: 10px;
     font-style: italic;
+    margin: 0px 10px 10px 10px;
+    text-align: center;
 }
 
 .tm-link a {
     text-decoration: none;
     color: #2f1f5d;
     font-weight: 600;
+}
+
+.tm-link-mobile {
+    display: none;
 }
 
 /* Wide Picture */
@@ -1398,8 +1408,9 @@ button[type=submit]:hover {
         }
 
         .coaching1-img {
-            background-position: left;
+            background-position: center bottom -40px;
             background-repeat: no-repeat;
+            background-size: cover;
             height: 180px;
             width: auto;
             float: none;
@@ -1408,8 +1419,8 @@ button[type=submit]:hover {
         }
 
         .coaching2-img {
-            background-position: left;
-            background-position: top -40px right -0px;
+            background-position: center;
+            background-position: top -40px;
             background-repeat: no-repeat;
             height: 180px;
             width: auto;
@@ -1419,15 +1430,42 @@ button[type=submit]:hover {
         }
 
         .coaching3-img {
-            background-position: left;
-            background-position: bottom -90px right 0px;
+            background-image: url(img/time-matrix-v.2.png);
+            background-position: bottom left;
             background-repeat: no-repeat;
+            background-size: cover;
             height: 180px;
             width: auto;
             float: none;
             display: block;
-            margin: 10px;
+            margin: 10px 10px 5px 10px;
             padding: 0;
+        }
+
+        .text3 {
+            margin-bottom: 10px;
+        }
+
+        .tm-link-mobile {
+            display: block;
+            margin: 0px 10px 15px 10px;
+        }
+
+        .tm-link-mobile p {
+            font-size: 12px;
+            font-style: italic;
+            margin: 0px;
+            text-align: center;
+        }
+
+        
+        .tm-link-mobile a {
+            text-decoration: none;
+            color: #2f1f5d;
+            font-weight: 600;
+        }
+        .tm-link {
+            display: none;
         }
 
         .offers {
