@@ -620,13 +620,13 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 175.8px;
-    width: 198px;
+    height: 173px;
+    width: 194px;
     border: solid red 0px;
     float: left;
     margin: 10px;
     right: 0px;
-    box-shadow: 2px 2px 2px 1px #2f1f5d40;
+    box-shadow: 2px 2px 2px 0px #2f1f5d40;
     padding: 15px;
 }
 
@@ -641,6 +641,20 @@ body {
 .text3 p {
     margin: 10px;
     display: block;
+}
+
+.tm-link {
+    margin: 10px;
+    display: block;
+    width: 200px;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.tm-link a {
+    text-decoration: none;
+    color: #2f1f5d;
+    font-weight: 600;
 }
 
 /* Wide Picture */
