@@ -635,7 +635,7 @@ body {
 }
 
 .coaching3-img {
-    background-image: url(img/time-matrix-v.3.png);
+    background-image: url(img/time-matrix.png);
     background-size: cover;
     background-position: top 0px left -62px;
     background-repeat: no-repeat;
@@ -1008,10 +1008,6 @@ textarea:valid + span::before {
     content: '';
     color: #2f1f5d;
 }
-
-
-
-
   
 button[type=submit] {
     background-color: #2f1f5d;
@@ -1033,9 +1029,27 @@ button[type=submit]:hover {
     box-shadow: 0px 4px 5px 2px #00000020;
 }
 
+.confirm-text {
+    padding: 0px;
+    margin: 0px;
+    width: 450px;  
+}
+
+.confirm-text h3 {
+    font-family: 'NewsGoth BT', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px; 
+    margin-bottom: -5px;
+    text-align: left;
+}
+
+.confirm-text p {
+    text-align: left;
+}
 
 .mail-img {
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     display: block;
     margin-left: auto;
@@ -1046,6 +1060,26 @@ button[type=submit]:hover {
 
 .shape-bg img {
     opacity: 40%; 
+}
+
+.sub-section {
+    width: 350px;  
+    margin-bottom: 100px;
+    font-style: italic;
+    font-size: 12px;
+    text-align: center;
+}
+
+.sub-section p {
+    text-align: center;
+}
+
+.sub-section a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
+    color: #2f1f5d;
+    text-align: center;
 }
 
 
@@ -1611,25 +1645,6 @@ button[type=submit]:hover {
             padding-right: 10px;
         }
 
-        /* .img-cntr {
-            display: none;
-        } 
-        
-        .img-cntr-mobile {
-            display: initial;
-            position: relative;
-            height: 130px;
-            width: 100px;
-            float: right;
-            background-image: url('img/benthe-ccv2.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom 0px right -55px ;
-            margin: 10px 10px 0px 0px;
-            box-shadow: 2px 2px 2px 1px #2f1f5d40;
-        } */
-       
-
         .img-cntr {
             height: 180px;
             width: 280px;
@@ -1668,6 +1683,29 @@ button[type=submit]:hover {
 
         .mail-img {
             max-width: 200px;
+        }
+
+        .confirm {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 300px;
+            align-items: center;
+        }
+
+        .confirm-text {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 300px;
+            align-items: center;
+        }
+
+        .sub-section {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 300px;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
         }
 
     /* -- FOOTER -- */
