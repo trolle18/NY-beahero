@@ -507,6 +507,7 @@ body {
 
 .offers ul {
     line-height: 24px;
+    padding-inline-start: 25px;
 }
 
 .offers li {
@@ -530,7 +531,6 @@ body {
     background-repeat: no-repeat;
     left: -18px;
     top: 4px;
-
 }
 
 
