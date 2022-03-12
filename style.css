@@ -140,6 +140,10 @@ body {
     margin: 0px 50px;
 }
 
+h3 {
+    text-transform: uppercase;
+}
+
 .section-cntr {
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +259,7 @@ body {
     padding: 5px;
     width: 198px;  
     box-shadow: 2px 2px 2px 1px #2f1f5d40;
+    text-align: center;
 }
 
 .card h3 {
@@ -589,11 +594,25 @@ body {
     color: #2f1f5d;
     font-style: italic; 
     font-size: 14px;
+    font-weight: 600;
     border: solid green 0px;
     cursor: pointer;
     position: relative;
     height: 25px;
     width: 151.85px;
+}
+
+.pp-link img {
+    height: 14px;
+    width: 14px;
+    margin-top: 4px;
+    margin-left: 0px;
+    color: #2f1f5d;
+    display: inline;
+}
+
+.pp-link img svg {
+    color: #2f1f5d;
 }
 
 .pp-logo {
