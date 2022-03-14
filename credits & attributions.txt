@@ -4,16 +4,6 @@
 <!-- Close-up lavenders w. Bee -->
 Photo by <a href="https://unsplash.com/@anglopic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Daniel Cooke </a> 
 on <a href="https://unsplash.com/s/photos/work-plan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash </a>
-
-<!-- Desk w. Laptop, coffee, notepad -->
-Photo by <a href="https://unsplash.com/@andrewtneel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Andrew Neel </a> 
-on <a href="https://unsplash.com/s/photos/work-plan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash </a>
-  
-
-<!-- Two people at desk w. Notepad and laptops -->
-Photo by <a href="https://unsplash.com/@homajob?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Scott Graham </a> 
-on <a href="https://unsplash.com/s/photos/work-busy-stress-meeting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Unsplash </a>
-
   
 <!-- Person standing on mountain top -->
 Photo by <a href="https://unsplash.com/@ninalindgren?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Nina Lindgren </a> 
