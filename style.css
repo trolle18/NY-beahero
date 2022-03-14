@@ -336,8 +336,9 @@ h3 {
 
 .slide {
     display: none;
-    padding: 20px 40px 40px 40px;
+    padding: 20px 40px 20px 40px;
     text-align: left;
+    width: 570px;
 }
 
  .slide q {
@@ -365,7 +366,7 @@ h3 {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 180px;
     width: auto;
     margin-top: -30px;
     padding: 15px;
@@ -473,7 +474,7 @@ h3 {
     background-image: url(img/sprout.jpg);
     background-size: cover;
     background-position: left;
-    height: 260px;
+    height: 280px;
     width: 200px;
     float: left;
     right: 0px;
@@ -496,7 +497,7 @@ h3 {
 }
 
 .offers ul {
-    line-height: 24px;
+    line-height: 26px;
     padding-inline-start: 25px;
 }
 
@@ -541,7 +542,7 @@ h3 {
     background-image: url(img/jamie-street-unsplash.jpg.webp);
     background-size: cover;
     background-position: center;
-    height: 260px;
+    height: 280px;
     width: 200px;
     float: right;
     margin: 10px;
@@ -596,24 +597,23 @@ h3 {
     font-size: 14px;
     font-weight: 600;
     border: solid green 0px;
+    padding-top: 2px;
+    padding-left: 4px;
     cursor: pointer;
     position: relative;
-    height: 25px;
-    width: 151.85px;
 }
 
 .pp-link img {
     height: 14px;
     width: 14px;
-    margin-top: 4px;
+    bottom: 0;
+    margin-top: 2px;
     margin-left: 0px;
-    color: #2f1f5d;
-    display: inline;
+    filter: invert(15%) sepia(71%) saturate(956%) hue-rotate(224deg) brightness(93%) contrast(104%);
 }
 
-.pp-link img svg {
-    color: #2f1f5d;
-}
+
+
 
 .pp-logo {
     background-image: url(img/pp-logo.png);
@@ -1145,6 +1145,10 @@ button[type=submit]:hover {
     color: #c8c7ff;
 }
 
+.link-focus a {
+    color: #c8c7ff;
+}
+
 .footer-nav {
     padding-left: 100px;
 
@@ -1283,7 +1287,7 @@ button[type=submit]:hover {
             width: 100px;
             box-shadow: 2px 2px 4px 1px #2f1f5d40;
             float: right;
-            margin-left: 0px;
+            margin-left: 4px;
             margin-right: 0px;
         }
 
@@ -1340,11 +1344,15 @@ button[type=submit]:hover {
         }
         /* Buttons */
         .prev, .next {
-            top: 50%;
+            top: 200px;
             margin-top: -30px;
             padding: 10px;
             font-size: 20px;
             font-weight: 600;
+        }
+
+        .dot-container {
+            margin-top: 10px;
         }
 
     /* -- COACHING -- */
@@ -1353,6 +1361,10 @@ button[type=submit]:hover {
             margin-left: auto;
             margin-right: auto;
             padding: 0px;
+        }
+
+        .coaching-section h3 {
+            text-align: center;
         }
 
         .coach-img {
@@ -1384,11 +1396,37 @@ button[type=submit]:hover {
         }
 
         .text2 {
-            width: auto;
+            max-width: 285px;
+            padding-bottom: 10px;
         }
 
         .pp {
             float: none;
+        }
+
+        .pp-link {
+            text-decoration: none;
+            color: #2f1f5d;
+            font-style: italic; 
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            height: 25px;
+            width: 151.85px;
+        }
+        
+        .pp-link img {
+            height: 14px;
+            width: 14px;
+            margin-top: 4px;
+            margin-left: 0px;
+            color: #2f1f5d;
+            display: inline;
+        }
+        
+        .pp-link img svg {
+            color: #2f1f5d;
         }
 
         .pp p {
@@ -1423,8 +1461,8 @@ button[type=submit]:hover {
 
         .offers {
             margin: 0px;
-            width: 100%;
-            display: block;
+            max-width: 285px;
+            padding: 0px 5px;
         }
 
         .benthe-img {
@@ -1594,6 +1632,10 @@ button[type=submit]:hover {
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+        }
+
+        .link-focus a {
+            color: #c8c7ff;
         }
 
         .footer-links li {
