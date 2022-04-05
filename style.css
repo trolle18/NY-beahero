@@ -459,6 +459,7 @@ h3 {
 
   .coaching-section {
     max-width: 650px;
+    height: 300px;
     padding: 0px;
     overflow: hidden;
     margin-left: auto;
@@ -624,30 +625,37 @@ h3 {
     position: absolute;
 }
 
-  /* Card 3 */
+/* Card 3 */
 .coach-card {
     display: flex;
     flex-direction: row;
- }
+    justify-content: space-between;
+}
 
 .coach-img {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 296px;
     margin: 10px;
 }
 
 .coaching3-img {
     background-image: url(img/time-matrix-v.2.png);
     background-size: cover;
-    background-position: top 0px left -62px;
+    background-position: top 0px left -100px;
     background-repeat: no-repeat;
-    height: 185px;
-    width: 200px;
+    height: 280px;
+    width: 296px;
     float: left;
     box-shadow: 2px 2px 2px 0px #2f1f5d40;
 }
 
+.text3 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+}
 
 .text3 h3 {
     font-family: 'NewsGoth BT', sans-serif;
@@ -659,18 +667,13 @@ h3 {
   
 .text3 p {
     margin: 10px;
-    display: block;
 }
+
 
 .tm-link {
-    display: block;
-}
-
-.tm-link p {
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
-    /* text-align: center; */
-    margin: 5px 0px 0px 0px;
+    margin: 6px 0px 0px 10px;
 }
 
 .tm-link a {
@@ -682,7 +685,7 @@ h3 {
 
 /* Wide Picture */
 .benthe-athens {
-    margin: 40px 0px;
+    margin: 50px 0px 100px 0px;
 }
 
 
@@ -871,19 +874,6 @@ h3 {
     height: 250px;
     width: 650px;
 }
-
-/* .wide-img-outercntr {
-    display: none;
-} */
-
-.space {
-    margin: 50px 0px;
-}
-
-.more-space {
-    margin: 100px 0px;
-}
-
 
 
 /* ---- CONTACT ---- */
