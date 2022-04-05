@@ -6,14 +6,15 @@ function handler(entries) {
 
       if (entry.isIntersecting) {
           entry.target.classList.add("transition");
-      } else {
+      } 
+      else {
           entry.target.classList.remove("transition");
       }
   }
 }
 
 const observer = new IntersectionObserver(handler, {
-  threshold: 0.3,
+  threshold: 0.2,
 });
 
 

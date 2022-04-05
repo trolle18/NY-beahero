@@ -415,7 +415,6 @@ h3 {
  
 
 /* Animations */
-
 .fade-in {
     transition: all 0.4s ease-in-out;
     opacity: 0;
@@ -468,6 +467,20 @@ h3 {
     box-shadow: 2px 2px 2px 1px #2f1f5d40;
 }
 
+.coach-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coach-img {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    margin: 10px;
+}
+
 
   /* Card 1 */
   .coaching1-img {
@@ -479,12 +492,12 @@ h3 {
     float: left;
     right: 0px;
     box-shadow: 2px 2px 2px 1px #2f1f5d40;
-    margin: 10px;
+    margin: 0px;
 
 }
 
 .offers {
-    margin-left: 220px;
+    margin: 0px 10px 10px 5px;
 }
 
 .offers h3 {
@@ -493,12 +506,12 @@ h3 {
     text-transform: uppercase;
     font-size: 18px; 
     text-align: left;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
 }
 
 .offers ul {
     line-height: 26px;
-    padding-inline-start: 25px;
+    padding-inline-start: 15px;
 }
 
 .offers li {
@@ -612,9 +625,6 @@ h3 {
     filter: invert(15%) sepia(71%) saturate(956%) hue-rotate(224deg) brightness(93%) contrast(104%);
 }
 
-
-
-
 .pp-logo {
     background-image: url(img/pp-logo.png);
     background-size: contain;
@@ -626,19 +636,6 @@ h3 {
 }
 
 /* Card 3 */
-.coach-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.coach-img {
-    display: flex;
-    flex-direction: column;
-    width: 296px;
-    margin: 10px;
-}
-
 .coaching3-img {
     background-image: url(img/time-matrix-v.2.png);
     background-size: cover;
@@ -655,6 +652,7 @@ h3 {
     flex-direction: column;
     width: auto;
     height: 100%;
+    margin: 0px 10px 10px 5px;
 }
 
 .text3 h3 {
@@ -662,24 +660,36 @@ h3 {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 18px; 
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
 }
   
 .text3 p {
-    margin: 10px;
+    margin: 0px 0px;
 }
 
-
 .tm-link {
-    font-size: 12px;
+    color: #2f1f5d;
+    font-size: 14px;
     font-style: italic;
-    margin: 6px 0px 0px 10px;
+    padding: 22px 0px 0px 0px;
 }
 
 .tm-link a {
     text-decoration: none;
     color: #2f1f5d;
     font-weight: 600;
+}
+
+.tm-link img {
+    height: 14px;
+    width: 14px;
+    bottom: 0;
+    margin: 0px;
+    filter: invert(15%) sepia(71%) saturate(956%) hue-rotate(224deg) brightness(93%) contrast(104%);
+}
+
+.card3 .coach-img {
+    width: 296px;
 }
 
 
@@ -1347,6 +1357,7 @@ button[type=submit]:hover {
     /* -- COACHING -- */
         .coaching-section {
             width: 300px;
+            height: auto;
             margin-left: auto;
             margin-right: auto;
             padding: 0px;
@@ -1442,10 +1453,12 @@ button[type=submit]:hover {
 
         .text3 {
             margin-bottom: 0px;
+            margin-left: 10px;
         }
 
         .tm-link {
-            text-align: center;
+            text-align: left;
+            margin-bottom: 10px;
         }
 
         .offers {
@@ -1465,7 +1478,7 @@ button[type=submit]:hover {
 
         .benthe-athens {
             width: 100%;
-            margin: 0;
+            margin: 50px 0px;
             display: block;
             justify-content: center;
         }
@@ -1665,6 +1678,18 @@ button[type=submit]:hover {
             display: block;
         }
 
+
+    /* -- ANIMATIONS -- */
+    .fade-in {
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+    }
+    
+    .fade-in.transition {
+        transition: all 0.4s ease-in-out;
+        opacity: 1;
+    }
+
 }
 
 
@@ -1705,7 +1730,7 @@ button[type=submit]:hover {
             float: right;
             margin-top: -8px;
         }
-      
+        
         .dropdown-content {
             display: none;
             background-color: #2f1f5dba;
@@ -1716,17 +1741,17 @@ button[type=submit]:hover {
             z-index: 1;
             right: 0;
         }
-      
+        
         .dropdown-content a {
-           color: #f8f8f8;
-           padding: 10px 15px;
-           text-decoration: none;
-           display: block;
-           text-transform: uppercase;
+            color: #f8f8f8;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
         }
       
         .show {
-          display: block;
+            display: block;
         }
 
     
@@ -1749,9 +1774,8 @@ button[type=submit]:hover {
             z-index: -1;
             padding-top: 180px;
             margin-left: -250px;
-
         }
-        
+            
         .shape-bg img {
             position: absolute;
             z-index: -1;
@@ -1765,10 +1789,21 @@ button[type=submit]:hover {
             background-color: #2f1f5d;
             padding: 50px 0px;
         }
-        
+            
         .footer-content {
             margin: 20px;
-    }
+        }
+
+    /* -- ANIMATIONS -- */
+        .fade-in {
+            transition: all 0.4s ease-in-out;
+            opacity: 1;
+        }
+            
+        .fade-in.transition {
+            transition: all 0.4s ease-in-out;
+            opacity: 1;
+        }
 }
 
 
